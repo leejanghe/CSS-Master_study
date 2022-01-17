@@ -1,4 +1,4 @@
-## Flex box 핵심 
+## flex box column & row 
 
 flexbox를 사용하기전 상자를 나란히 놓을 때 `display-inline-block` 을 하면 된다. 하지만 flex 박스를 사용하면 편하게 할 수 있다.
 우선 flexbox를 사용하려면 플렉스 컨테이너 안에 넣어야 사용 할 수 있습니다. 또 한 flex box는 플렉스 컨테이너에 적용해야 됩니다.
