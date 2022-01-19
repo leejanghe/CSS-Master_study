@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+}
+  
+  
+.box{
+    background-color: red;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+  }
