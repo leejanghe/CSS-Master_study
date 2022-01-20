@@ -24,7 +24,6 @@ h1{
   color: #fff;
   font-weight: 500;
   padding: 10px;
-  /* flex-grow: 1; */
 }
 
 .header_text:nth-child(1){
@@ -38,6 +37,7 @@ h1{
 .header_text:nth-child(3){
   flex-grow: 2;
   margin-left: 55px;
+
 }
 
 .religion_text{
@@ -48,7 +48,6 @@ h1{
   font-weight: 500;
 }
 
-/* 472    154 154 154 154 616 */
 .grid{
   display: grid;
   grid-template-columns: repeat(3,205px);
