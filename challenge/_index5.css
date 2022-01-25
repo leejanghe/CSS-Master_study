@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    height: 100vh;
+    /* font-size: 3vw; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-transform: uppercase;
+}
+header h1:nth-child(n):nth-child(-n+3){
+    transform: rotate(180deg);
+}
+
+
+section{
+    grid-row: span 3;
+}
+
+
+nav {
+    background-color: red;
+    grid-row: span 2;
+    grid-column-start:1;
+    padding: 15px 20px;
+}
+
+a {
+    background-color: hsl(47, 100%, 51%);
+    grid-row-start:3;
+    grid-column-start: 2;
+    padding: 15px 20px;
+}
