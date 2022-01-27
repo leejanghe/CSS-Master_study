@@ -1,0 +1,44 @@
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px repeat(2, 1fr) 50px;
+}
+
+header, footer{
+    grid-column: 1/-1;
+    border: 5px solid #fd6b3a;
+}
+
+.under-nav{
+    grid-column: 1/2;
+    border: 5px solid #fd6b3a;
+}
+
+.center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-start: 2;
+    grid-row: 2/-2;
+    /* border: 5px solid #fd6b3a; */
+}
+
+.orders,
+.reservations,
+.nav{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border: 5px solid #fd6b3a;
+}
+
+.orders,
+.reservations{
+    grid-column: -2/-1;
+    border: 5px solid #fd6b3a;
+}
+
+.orders{
+    grid-row-start: 2;
+    border: 5px solid #fd6b3a;
+}
