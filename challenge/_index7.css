@@ -1,0 +1,53 @@
+.nav{
+    width: 100%;
+    display: grid;
+    border: 5px solid #000;
+    background-color: #000;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+}
+
+.nav .nav__item{
+    padding: 15px 25px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    gap: 5px;
+    border: 5px solid #000;
+    background-color: #000;
+    border-top: 0;
+}
+
+.post{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post .post__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    font-size: 19px;
+}
+
+/* Flex와 Grid를 사용해서 레이아웃 만들기
+div.nav안에 있는 div.nav__item에게 grid속성을 사용하기 위해 부모 요소인 div.nav에게 display: grid를 정의해줍니다.
+div.nav에 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))을 줘서 자식 요소들의 너비를 지정합니다.
+minmax(150px, 1fr) 함수를 사용해서 자식 요소들의 최소 크기는 150px로, 최대 크기는 fr단위를 사용해서 남아 있는 공간 안에서 일정 비율로 모두 채웁니다.
+auto-fit을 사용해서 남아있는 column공간이 있다면 자동으로 grid 아이템들의 공간으로 모두 채웁니다.
+main안에 있는 div.post에게 grid속성을 사용하기 위해 부모 요소인 main에게 display: grid를 정의해줍니다.
+main에 grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))을 줘서 자식 요소들의 너비를 지정하고 grid-template-rows:repeat(3, 1fr)을 줘서 동일한 높이를 가지는 3개의 행을 생성합니다.
+minmax(400px, 1fr) 함수를 사용해서 자식 요소들의 최소 크기는 400px로, 최대 크기는 fr단위를 사용해서 남아 있는 공간 안에서 일정 비율로 모두 채웁니다.
+auto-fit을 사용해서 남아있는 column공간이 있다면 자동으로 grid 아이템들의 공간으로 모두 채웁니다.
+gap:5px을 통해 행과 열 사이 간격에 5px의 크기를 가진 테두리를 만듭니다.
+div.nav__item과 div.post__row에 display:flex, justify-content:space-between을 줘서 자식 요소들 사이에 공간을 두고 수평 정렬합니다. */

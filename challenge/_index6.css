@@ -42,3 +42,16 @@ header, footer{
     grid-row-start: 2;
     border: 5px solid #fd6b3a;
 }
+
+
+/* Grid를 사용해서 레이아웃 만들기
+main아래에 자식 태그들에게 grid속성을 사용하기 위해 부모 요소인 main에게 display: grid를 정의해줍니다.
+main에 grid-template-columns: 50px 1fr 50px을 줘서 각각 50px, 1fr, 50px의 크기를 갖는 3개의 열을 생성합니다.
+main에 grid-template-rows: 50px repeat(2, 1fr) 50px을 줘서 각각 50px, 1fr, 1fr, 50px의 크기를 갖는 4개의 행을 생성합니다.
+header와 footer에게 grid-column: 1 / -1를 줘서 시작 값 1과 끝 값 -1을 지정해서 첫 번째 line부터 마지막 line까지의 영역을 크기로 지정합니다.
+div.under-nav에 grid-column: 1 / 2를 줘서 시작 값 1과 끝 값 2를 지정해서 첫 번째 line부터 두 번째 line까지의 영역을 크기로 지정합니다.
+div.orders와 div.reservations에 grid-column: -2 / -1를 줘서 시작 값을 마지막 열을 기준으로 두 번째 line부터 끝 값을 마지막 열을 기준으로 첫 번째 line까지의 영역을 크기로 지정합니다.
+div.center아래에 자식 태그들에 grid속성을 사용하기 위해 부모 요소인 div.center에게 display: grid를 정의해줍니다.
+div.center에 grid-template-columns:repeat(2, 1fr)를 통해 동일한 너비를 가진 2개의 열을 생성합니다.
+div.center에 grid-column-start: 2를 줘서 grid 아이템의 시작 값을 열에서 두 번째 줄로 지정하고 grid-row:2 / -2를 줘서 시작 값 2와 끝 값 -2를 지정해서 첫 번째 행에서 두 번째 line부터 마지막 행에서 두 번째 line까지의 영역을 크기로 지정합니다.
+div.order와 div.reservation, div.nav에게 text-orientation: upright를 줘서 텍스트를 가로 방향이 아닌 세로 방향으로 배치될 수 있도록 합니다. 추가로 writing-mode: vertical-rl를 줘서 세로 방향으로 설정된 텍스트들을 위에서 아래로 배치합니다.  */
